@@ -16,37 +16,37 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
     }
 
-//  Khởi tạo menu "onCreateOptionsMenu"
-    @Override
-    public boolean onCreateOptionsMenu(Menu menu) {
-        getMenuInflater().inflate(R.menu.menu, menu);
-        return super.onCreateOptionsMenu(menu);
-    }
+        //  Khởi tạo menu "onCreateOptionsMenu"
+            @Override
+            public boolean onCreateOptionsMenu(Menu menu) {
+                getMenuInflater().inflate(R.menu.menu, menu);
+                return super.onCreateOptionsMenu(menu);
+            }
 
-//    Bất sự kiện menu "onOptionsItemSelected"'
+        //    Bất sự kiện menu "onOptionsItemSelected"'
 
-    @Override
-    public boolean onOptionsItemSelected(@NonNull MenuItem item) {
-        switch (item.getItemId()){
-            case R.id.DanhSach_menu:
-                Toast.makeText(this, "Danh sach", Toast.LENGTH_SHORT).show();
-                break;
-            case R.id.DiaChi_menu:
-                Toast.makeText(this, "Đia chỉ", Toast.LENGTH_SHORT).show();
-                break;
-            case R.id.phone_menu:
-                Toast.makeText(this, "Phone", Toast.LENGTH_SHORT).show();
-                break;
-            case R.id.php_memu:
-                Toast.makeText(this, "Php", Toast.LENGTH_SHORT).show();
-                break;
-            case R.id.Seach_menu:
-                Toast.makeText(this, "Search", Toast.LENGTH_SHORT).show();
-                break;
-            case R.id.Setting_menu:
-                Toast.makeText(this, "Setting", Toast.LENGTH_SHORT).show();
-                break;
+            @Override
+            public boolean onOptionsItemSelected(@NonNull MenuItem item) {
+                switch (item.getItemId()){
+                    case R.id.DanhSach_menu:
+                    Toast.makeText(this, "Danh sach", Toast.LENGTH_SHORT).show();
+                    break;
+                case R.id.DiaChi_menu:
+                    Toast.makeText(this, "Đia chỉ", Toast.LENGTH_SHORT).show();
+                    break;
+                case R.id.phone_menu:
+                    Toast.makeText(this, "Phone", Toast.LENGTH_SHORT).show();
+                    break;
+                case R.id.php_memu:
+                    Toast.makeText(this, "Php", Toast.LENGTH_SHORT).show();
+                    break;
+                case R.id.Seach_menu:
+                    Toast.makeText(this, "Search", Toast.LENGTH_SHORT).show();
+                    break;
+                case R.id.Setting_menu:
+                    Toast.makeText(this, "Setting", Toast.LENGTH_SHORT).show();
+                    break;
+            }
+            return super.onOptionsItemSelected(item);
         }
-        return super.onOptionsItemSelected(item);
-    }
 }
